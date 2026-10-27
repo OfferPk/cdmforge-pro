@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080e1a"/>
+      <stop offset="100%" stop-color="#111d33"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#16243b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)"/>
+
+  <text x="480" y="46" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" letter-spacing="1">CDMFORGE PRO (v1.0.0) — SYSTEM ARCHITECTURE</text>
+  <text x="480" y="72" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">CCSDS 508.0-B-1 &amp; ISO 26900 Conjunction Assessment &amp; Collision Probability Studio</text>
+
+  <!-- Left Box: Ingestion & Telemetry -->
+  <rect x="40" y="110" width="260" height="360" rx="10" fill="url(#cardBg)" stroke="#1e293b" stroke-width="2"/>
+  <rect x="40" y="110" width="260" height="40" rx="10" fill="#1e293b"/>
+  <text x="170" y="136" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">CONJUNCTION INGESTION</text>
+  <text x="60" y="180" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="13">• Tracking Sensor Feeds</text>
+  <text x="75" y="202" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Space-Track / 18 SDS / SSA</text>
+  <text x="60" y="240" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="13">• Relative State Vector</text>
+  <text x="75" y="262" fill="#64748b" font-family="monospace" font-size="11">[R, T, N] Pos &amp; Vel @ TCA</text>
+  <text x="60" y="300" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="13">• 3x3 Covariance Matrices</text>
+  <text x="75" y="322" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Object 1 &amp; Object 2 RTN frame</text>
+  <text x="60" y="360" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="13">• Spacecraft Dimensions</text>
+  <text x="75" y="382" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Hard-Body Collision Radius (R_H)</text>
+
+  <!-- Middle Box: Math & Collision Engines -->
+  <rect x="350" y="110" width="260" height="360" rx="10" fill="url(#cardBg)" stroke="#0284c7" stroke-width="2"/>
+  <rect x="350" y="110" width="260" height="40" rx="10" fill="#0284c7"/>
+  <text x="480" y="136" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">ASTRODYNAMIC ENGINES</text>
+  <text x="370" y="180" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" font-weight="bold">1. B-Plane Transformation</text>
+  <text x="385" y="202" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">Combined Covariance C* = C1 + C2</text>
+  <text x="385" y="220" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">Eigenvalues &amp; Principal Axes (σ₁, σ₂)</text>
+  <text x="370" y="260" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" font-weight="bold">2. Foster-1992 Pc Engine</text>
+  <text x="385" y="282" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">2D Collision Probability Integral</text>
+  <text x="385" y="300" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">Maneuver Alert Triage (RED/YLW/GRN)</text>
+  <text x="370" y="340" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" font-weight="bold">3. 10-Point Normative Auditor</text>
+  <text x="385" y="362" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">CCSDS 508.0-B-1 Rules 001 - 010</text>
+  <text x="385" y="380" fill="#10b981" font-family="system-ui, sans-serif" font-size="11">Automated 100% Compliance Scorecard</text>
+
+  <!-- Right Box: Mission Outputs & Integration -->
+  <rect x="660" y="110" width="260" height="360" rx="10" fill="url(#cardBg)" stroke="#1e293b" stroke-width="2"/>
+  <rect x="660" y="110" width="260" height="40" rx="10" fill="#1e293b"/>
+  <text x="790" y="136" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">MISSION PRODUCTS</text>
+  <text x="680" y="180" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="13">• Standard KVN CDM Output</text>
+  <text x="695" y="202" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Fully Compliant .cdm Message</text>
+  <text x="680" y="240" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="13">• Interactive B-Plane Radar</text>
+  <text x="695" y="262" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">1/2/3-Sigma Uncertainty Ellipses</text>
+  <text x="680" y="300" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="13">• Python 3 CLI Utility</text>
+  <text x="695" y="322" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Headless CI/CD COLA Automation</text>
+  <text x="680" y="360" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="13">• Maneuver Decision Advisory</text>
+  <text x="695" y="382" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Threshold Waiver / Thruster Burn Go</text>
+
+  <!-- Connectors -->
+  <line x1="300" y1="290" x2="350" y2="290" stroke="#38bdf8" stroke-width="2"/>
+  <line x1="610" y1="290" x2="660" y2="290" stroke="#38bdf8" stroke-width="2"/>
+</svg>
